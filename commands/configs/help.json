@@ -1,0 +1,3 @@
+{
+    "help": "```.help     Displays this message\n\n.network  Displays current network stats\n\n.pool     Displays current pool stats\n\n.price    Displays current Stex.com price of WEB in BTC\n\nComing soon!\n\n.register Register your wallet address with the bot for custom stats in a DM\n\n.mystats  Displays your pool stats in a DM from the bot```"
+}
