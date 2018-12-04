@@ -1,7 +1,7 @@
 const loudFoot = require("./configs/footer.json");
 const api = "https://app.stex.com/api2/ticker";
 const Discord = require("discord.js");
-const snekfetch = require("snekfetch");
+const fetch = require("node-superfetch");
 
 module.exports.run = async (bot, message, args) => {
 
@@ -10,7 +10,7 @@ module.exports.run = async (bot, message, args) => {
 
     if(check == correct || message.channel.type == "dm") {
     
-        snekfetch.get(api).then(r => {
+        fetch.get(api).then(r => {
             let body = r.body;
             let pair = ("WEB_BTC");
             // let btc = ("BTC_USD");
