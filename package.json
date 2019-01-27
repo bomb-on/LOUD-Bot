@@ -1,18 +1,25 @@
 {
-  "name": "loud_bot",
+  "name": "loudbot",
   "version": "1.0.0",
-  "description": "LOUD Mining Stats",
+  "description": "LOUD Mining's Discord Bot",
   "main": "loudbot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "LOUD Mining",
   "license": "ISC",
   "dependencies": {
+    "bufferutil": "^4.0.1",
+    "collections": "^5.1.7",
     "discord.js": "^11.4.2",
-    "snekfetch": "^4.0.4",
-    "sqlite": "^3.0.0",
-    "superagent": "^4.0.0",
+    "erlpack": "^0.1.2",
+    "fs": "0.0.1-security",
+    "jparser": "0.0.2",
+    "libsodium": "^0.7.4",
+    "libsodium-wrappers": "^0.7.4",
+    "mysql": "^2.16.0",
+    "node-opus": "^0.3.1",
+    "node-superfetch": "^0.1.9",
     "uws": "^99.0.0"
   }
 }
