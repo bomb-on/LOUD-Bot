@@ -47,8 +47,8 @@ module.exports.run = async (bot, message, args) => {
         .setTitle("LOUD Mining Pool Stats")
         .setColor("#00720D")
         .setThumbnail(URL = "https://loudmining.com/images/loudog.png")
-        .addField("Lumber", `Total Workers: ${lmbrTotalWorkers}\nPool Hasrate: ${lmbrHashrate}\nBlocks Found: ${lmbrTotalBlocks}`)
-        .addField("VerusCoin", `Total Workers: ${vrscTotalWorkers}\nPool Hasrate: ${vrscHashrate}\nBlocks Found: ${vrscTotalBlocks}`)
+        .addField("Lumber", `Total Workers: ${lmbrTotalWorkers}\nPool Hashrate: ${lmbrHashrate}\nBlocks Found: ${lmbrTotalBlocks}`)
+        .addField("VerusCoin", `Total Workers: ${vrscTotalWorkers}\nPool Hashrate: ${vrscHashrate}\nBlocks Found: ${vrscTotalBlocks}`)
         .addField("Webchain", `Total Miners: ${webMinersTotal}\nPool Hashrate: ${webphr} ${webphs}\nBlocksFound: ${webTotalBlocks}`)
         .addField("Powered by © LOUD Mining 2018", (loudFoot.footer));
         return message.channel.send(poolsEmbed);
