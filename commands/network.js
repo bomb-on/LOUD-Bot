@@ -15,8 +15,9 @@ var webbch;
 var webnhr;
 module.exports.run = async (bot, message, args) => {
     var check = message.channel.id;
-    var correct = "537913904005775361"
-    if(check == correct || message.channel.type == "dm") {
+    var correct = "537913904005775361";
+    if(message.channel.type == "dm") return message.channel.send("Sorry can't do that here!");
+    if(check == correct) {
     fetch.get(webapi).then(webr => {
         webbody = webr.body;
         webbch = webbody.nodes[0].height;
