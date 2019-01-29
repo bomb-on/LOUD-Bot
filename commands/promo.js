@@ -3,8 +3,9 @@ const loudFoot = require("./configs/footer.json");
 const Discord = require("discord.js");
 module.exports.run = async (bot, message, args) => {
     let check = message.channel.id;
-    let correct = "537913904005775361"
-    if(check == correct || message.channel.type == "dm") {
+    let correct = "537913904005775361";
+    if(message.channel.type == "dm") return message.channel.send("Sorry can't do that here!");
+    if(check == correct) {
         let promoEmbed = new Discord.RichEmbed()
         .setTitle("February Promotion")
         .setColor("#00720D")
